@@ -1,5 +1,6 @@
 package com.event.users.configure.security.Jwt;
 
+import com.event.users.adapter.driven.PrincipalUser;
 import com.event.users.adapter.driving.dto.response.JwtResponseDto;
 import com.nimbusds.jwt.JWT;
 import com.nimbusds.jwt.JWTClaimsSet;
@@ -41,7 +42,6 @@ public class JwtProvider {
                 .setSubject(usuarioPrincipal.getEmail())
                 .claim("roles", roles)
                 .claim("dni",usuarioPrincipal.getUsername())
-                .claim("id",usuarioPrincipal.getId())
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(new Date().getTime() + expiration * 180))
                 .signWith(SignatureAlgorithm.HS256, secret.getBytes())
