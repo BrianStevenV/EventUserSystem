@@ -2,7 +2,7 @@ package com.event.users.configure.security.Jwt;
 
 
 import com.event.users.configure.security.Jwt.JwtProvider;
-import com.pragma.powerup.usermicroservice.adapters.driven.jpa.mysql.adapter.UserDetailsServiceImpl;
+import com.event.users.adapter.driven.adapters.UserDetailsServiceImp;
 import com.pragma.powerup.usermicroservice.domain.api.IAuthenticationUserInfoServicePort;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

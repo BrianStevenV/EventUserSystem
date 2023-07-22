@@ -1,4 +1,4 @@
-package com.event.users;
+package com.event.users.adapter.driving.Controller;
 
 import com.event.users.adapter.driving.dto.request.LoginRequestDto;
 import com.event.users.adapter.driving.handler.IAuthHandler;
